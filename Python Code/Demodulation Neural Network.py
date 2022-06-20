@@ -1,18 +1,14 @@
 import numpy as np
-import pandas as pd
 import tensorflow as tf
 from tensorflow import keras
 from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import LSTM
-from keras.layers import Dropout
+from keras.layers import BatchNormalization
 from keras.layers import Conv1D
 from keras.layers import MaxPooling1D
-from keras.layers import AveragePooling1D
-from keras.layers import BatchNormalization
+from keras.layers import LSTM
+from keras.layers import Dense
+from keras.layers import Dropout
 from keras.callbacks import EarlyStopping
-from sklearn.model_selection import train_test_split
-
 
 model_conv1d = Sequential()
 model_conv1d.add(BatchNormalization())
